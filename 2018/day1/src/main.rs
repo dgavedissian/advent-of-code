@@ -1,6 +1,6 @@
 use std::fs::File;
 use std::io::{BufReader, BufRead, Error};
-use std::collections::HashSet;
+use std::collections::{HashSet, HashMap, BTreeMap};
 
 fn parse_operation(operation: &str) -> i32 {
     match operation.chars().next() {
